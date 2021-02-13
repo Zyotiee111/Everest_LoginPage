@@ -2,12 +2,15 @@ import React from 'react';
 import style from '../Themes/LoginStyle.module.css';
 import { FaFacebook, FaLinkedin, FaGoogle } from "react-icons/fa";
 import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
 
-export default function Title() {
+export default function SocialMedia(){
     return (
         <div>
             <Typography variant="h6" color= "primary">
-                OR
+            <Box m={1}>
+               OR
+            </Box>
             </Typography>
 
             {/* social auth */}
@@ -23,9 +26,6 @@ export default function Title() {
                 </div>
             </div>
 
-            <div>
-                <small style={{ color: "#9C9C9C" }}>or use your own email</small>
-            </div>
         </div>
     );
 }

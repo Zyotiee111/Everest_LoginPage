@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import style from "../Themes/LoginStyle.module.css";
 import { Link } from 'react-router-dom';
 import login from "../Image/login.jpg";
-import Title from "../Components/Title";
+import SocialMedia from "../Components/SocialMedia";
 import TextFieldComp from "../Components/TextField";
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
@@ -81,7 +81,7 @@ export default function Login({users, setLoginStatus}) {
                             error={loginError}
                         />
 
-                        {/* extra msg */}
+                        {/* extra  */}
                         <div className={style.extraMsg}>
                             <p>Forgot Password ?</p>
                             <Link to="/register" className={style.link}>
@@ -100,8 +100,8 @@ export default function Login({users, setLoginStatus}) {
                         </div>
                     </form>
 
-                    {/* title component*/}
-                    <Title />
+                    {/* SocialMedia component*/}
+                    <SocialMedia />
                     <div className={style.terms}>
                         <small style={{ color: "#9C9C9C" }}>
                             Privacy Policy &bull; Terms & Condition

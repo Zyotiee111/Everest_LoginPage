@@ -4,7 +4,7 @@ import classes from '../Themes/RegisterStyle.module.css';
 import register from "../Image/regsiter.jpg";
 import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
-import Title from '../Components/Title';
+import SocialMedia from '../Components/SocialMedia';
 import TextFieldComp from '../Components/TextField';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
@@ -72,8 +72,6 @@ export default function Register(props) {
 
                 {/* right section */}
                 <div className={classes.rightSection}>
-
-                    {/* title component*/}
                      {/* title */}
                      <Typography variant="h6" color= "primary" >
                         <Box fontWeight="fontWeightBold" m={1}>EverestWalk Groups</Box>
@@ -133,7 +131,7 @@ export default function Register(props) {
                         </Button>
                         </div>
                     </form>
-                    <Title />
+                    <SocialMedia />
                 </div>
 
             </div>
