@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&display=swap');
+*{
+    font-family: 'Hind', sans-serif;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.link{
+    text-decoration: none;
+}
+.toolbar{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 90px;
+}

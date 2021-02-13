@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login_page{
+    height: 100vh;
+    /* width: 100vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hind', sans-serif;
+}
+
+.container{
+    height: 600px;
+    width: 1050px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 74px -40px rgba(131, 144, 182, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+}
+
+.terms{
+    margin-top: 50px;
+}
+
+.leftSection{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.rightSection{
+    text-align: center;
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 1000;
+}
+
+.logo{
+    width: 150px;
+}
+
+.social_media{
+    display: flex;
+    justify-content: center;
+}
+
+.social_media > div{
+    margin: 20px 10px;
+    font-size: 20px;
+    color: #2a2a2a;
+}
+
+.social_media > div:hover{
+    cursor: pointer;
+}
+
+.input_field{
+    width: 500px;
+}
+
+.textField{
+    margin: 20px;
+}
+
+.extraMsg{
+    text-align: start;
+    width: 500px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.extraMsg > p {
+    color: #2a2a2a;
+}
+
+.signinBtn{
+    margin-top: 20px;
+}
+
+.link{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1200px){
+    .leftSection{
+        display: none;
+    }
+    .container{
+        justify-content: center;
+        width: 750px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+        width: 350px;
+    }
+    .form{
+        width: 320px;
+    }
+    .input_field{
+        width: 280px;
+    }
+    .extraMsg{
+        width: 300px;
+        margin-left: 20px;
+    }
+    .leftSection{
+        width: 350px;
+    }
+}
